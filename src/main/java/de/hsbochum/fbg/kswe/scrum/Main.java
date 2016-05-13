@@ -22,16 +22,18 @@ public class Main {
             Scrum scrum = new Scrum(prepareProductBacklog());
             
             scrum.planSprint(2);
-            scrum.startSprint(14);
+            scrum.startSprint(10);
             
             scrum.reviewSprint();
-            
-            scrum.planSprint(2);
-            scrum.startSprint(10);
             
             scrum.doSprintRetrospective();
             
             scrum.planSprint(2);
+            scrum.startSprint(10);
+            
+            scrum.reviewSprint();
+            
+            scrum.doSprintRetrospective();
 
         } catch (UnexpectedNextEventException | InitializationException |
                 InvalidSprintPeriodException ex) {
